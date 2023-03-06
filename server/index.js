@@ -1,5 +1,5 @@
 const express = require("express");
-
+//testing express fondamentals
 const app = express();
 var admin = express();
 var PORT = 3000;
@@ -11,7 +11,7 @@ admin.on('mount', function (parent) {
 admin.get('/', function (req, res) {
   res.send('Admin Homepage');
 });
-  
+
 app.use('/admin', admin);
   
 app.listen(PORT, function(err){
