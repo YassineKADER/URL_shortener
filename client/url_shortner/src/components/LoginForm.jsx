@@ -8,6 +8,7 @@ export default function LoginForm() {
           <label>Password:</label>
           <input type={"password"}></input>
         <a href="something.com">Forgot your password ?</a>
+        <input type={"submit"} value={"Login"}></input>
       </form>
     </div>
   );

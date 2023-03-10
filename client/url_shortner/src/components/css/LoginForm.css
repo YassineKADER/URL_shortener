@@ -8,7 +8,32 @@
 }
 
 .container form label{
-    display: block;
+    width: 80%;
+    height: 8%;
+    font-size:large;
+    font-weight: 600;
+}
+
+.container form input[type="text"]{
+    width: 80%;
+    height: 8%;
+}
+
+.container form input[type="password"]{
+    width: 80%;
+    height: 8%;
+}
+
+.container form input[type="submit"]{
+    margin: 2rem 0 0 0;
+    font-size:large;
+    font-weight: 600;
+    height: 10%;
+    width: 60%;
+    color: white;
+    background-color: blue;
+    border: transparent 1px solid;
+    border-radius: 5px;
 }
 
 .container form a{
