@@ -1,0 +1,28 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form label{
+    display: block;
+}
+
+.container form a{
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    background-color: lightgray;
+    border-radius: 15px;
+    border: solid 1px cornflowerblue;
+}
