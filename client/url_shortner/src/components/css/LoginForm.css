@@ -1,8 +1,18 @@
+@keyframes color {
+    0%   { background: #db25ffb6; }
+    20%  { background: #2e4edb; }
+    40%  { background: #0d3cd8; }
+    60%  { background: #05ffc9; }
+    80%  { background: #ff00d4; }
+    100% { background: #db25ffb6; }
+  }
+
 .container{
     height: 100vh;
     width: 100vw;
     background-color: whitesmoke;
     display: flex;
+    animation: color 9s infinite linear;
     align-items: center;
     justify-content: center;
 }
@@ -11,17 +21,21 @@
     width: 80%;
     height: 8%;
     font-size:large;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .container form input[type="text"]{
     width: 80%;
+    border-radius: 5px;
+    border: transparent 1px solid;
     height: 8%;
 }
 
 .container form input[type="password"]{
     width: 80%;
     height: 8%;
+    border-radius: 5px;
+    border: transparent 1px solid;
 }
 
 .container form input[type="submit"]{
@@ -29,11 +43,18 @@
     font-size:large;
     font-weight: 600;
     height: 10%;
+    transition: all 0.3s;
     width: 60%;
     color: white;
     background-color: blue;
     border: transparent 1px solid;
     border-radius: 5px;
+}
+
+.container form input[type="submit"]:hover{
+    background-color: transparent;
+    border-color: blue;
+    color: blue;
 }
 
 .container form a{
@@ -47,7 +68,8 @@ form{
     flex-direction: column;
     width: 25%;
     height: 50%;
-    background-color: lightgray;
+    background-color: rgba(255,255,255,0.5);
     border-radius: 15px;
-    border: solid 1px cornflowerblue;
+    border: solid 1px transparent;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
