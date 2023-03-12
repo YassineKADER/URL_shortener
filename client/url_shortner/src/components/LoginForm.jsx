@@ -1,8 +1,10 @@
 import "./css/LoginForm.css";
+import logo from "./../assets/test-logo.png";
 export default function LoginForm() {
   return (
     <div className="container">
       <form>
+      <img src={logo}></img>
           <label>Username:</label>
           <input type={"text"}></input>
           <label>Password:</label>

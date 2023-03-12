@@ -1,10 +1,11 @@
 @keyframes color {
-    0%   { background: #db25ffb6; }
     20%  { background: #2e4edb; }
-    40%  { background: #0d3cd8; }
-    60%  { background: #05ffc9; }
-    80%  { background: #ff00d4; }
-    100% { background: #db25ffb6; }
+    0%   { background: white; }
+    20%  { background: whitesmoke; }
+    40%  { background: lightgray; }
+    60%  { background: rgb(224, 240, 255); }
+    80%  { background: lightblue; }
+    100% { background: white; }
   }
 
 .container{
@@ -21,21 +22,37 @@
     width: 80%;
     height: 8%;
     font-size:large;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.container form img{
+    height: 25%;
 }
 
 .container form input[type="text"]{
     width: 80%;
     border-radius: 5px;
-    border: transparent 1px solid;
+    border: rgba(189, 189, 189, 0.6) 2px solid;
     height: 8%;
+    background-color: transparent;
+}
+
+.container form input[type="text"]:focus{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.container form input[type="password"]:focus{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
 }
 
 .container form input[type="password"]{
     width: 80%;
     height: 8%;
     border-radius: 5px;
-    border: transparent 1px solid;
+    background-color: transparent;
+    border: rgba(189, 189, 189, 0.6) 2px solid;
 }
 
 .container form input[type="submit"]{
